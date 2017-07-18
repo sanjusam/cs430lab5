@@ -1,0 +1,17 @@
+all: clean compile
+	@echo -e '[INFO] Done!'
+
+clean:
+	@echo -e '[INFO] Cleaning class files'
+	@rm -rf  ./cs/cs430/lab4/TransactionRecord.class
+	@rm -rf  ./cs/cs430/lab4/DatabaseAccess.class
+	@rm -rf  ./cs/cs430/lab4/ParseXMLData.class
+	@rm -rf  ./cs/cs430/lab4/Lab4.class
+
+compile:
+
+	@echo -e '[INFO] Compiling Sources'
+	@javac -d . ./src/cs/cs430/lab4/TransactionRecord.java
+	@javac -d . ./src/cs/cs430/lab4/DatabaseAccess.java
+	@javac -d . ./src/cs/cs430/lab4/ParseXMLData.java
+	@javac -d . ./src/cs/cs430/lab4/Lab4.java
